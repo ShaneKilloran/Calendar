@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="main.ui.Calendar">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="126" y="113" width="1154" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="13014" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="45090" binding="tabbedPane2" default-binding="true">
+            <constraints>
+              <tabbedpane title="Search Date"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="d0c36" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Please Enter Date Below"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="8b629" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="16a1f" class="javax.swing.JLabel" binding="EventsOnDay">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="2" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12515568"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="1c0a2" class="javax.swing.JButton" binding="searchButton" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12514037"/>
+                      <text value="Search"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+          <grid id="ce061" layout-manager="GridLayoutManager" row-count="7" column-count="32" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Add Event"/>
+            </constraints>
+            <properties>
+              <enabled value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="41c71" class="javax.swing.JComboBox" binding="eventType">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="31" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Event Type"/>
+                    <item value="Normal Event"/>
+                    <item value="Class"/>
+                    <item value="Exam"/>
+                    <item value="Free Time"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="bd6e6" class="javax.swing.JTextArea" binding="nameOfEventTextArea" default-binding="true">
+                <constraints>
+                  <grid row="1" column="31" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="5"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Name of Event"/>
+                </properties>
+              </component>
+              <component id="60561" class="javax.swing.JTextArea" binding="repeatEventTextArea" default-binding="true">
+                <constraints>
+                  <grid row="6" column="4" row-span="1" col-span="28" vsize-policy="6" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="5"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Repeat Event?"/>
+                </properties>
+              </component>
+              <component id="67f14" class="javax.swing.JTextArea" binding="locationTextArea1" default-binding="true">
+                <constraints>
+                  <grid row="5" column="15" row-span="1" col-span="17" vsize-policy="6" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="5"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Location"/>
+                </properties>
+              </component>
+              <component id="c6871" class="javax.swing.JTextArea" binding="startTime0000TextArea" default-binding="true">
+                <constraints>
+                  <grid row="3" column="26" row-span="1" col-span="6" vsize-policy="6" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="5"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Start Time (00:00)"/>
+                </properties>
+              </component>
+              <component id="902c3" class="javax.swing.JTextArea" binding="endTime0000TextArea" default-binding="true">
+                <constraints>
+                  <grid row="4" column="19" row-span="1" col-span="13" vsize-policy="6" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="5"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="End Time (00:00)"/>
+                </properties>
+              </component>
+              <component id="9e477" class="javax.swing.JTextArea" binding="dateYyyyMmDdTextArea" default-binding="true">
+                <constraints>
+                  <grid row="2" column="30" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="5"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Date (yyyy-mm-dd)"/>
+                </properties>
+              </component>
+              <component id="1386a" class="javax.swing.JButton" binding="addEventButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Add Event"/>
+                </properties>
+              </component>
+              <component id="fd681" class="javax.swing.JComboBox" binding="eventRepeat">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="No"/>
+                    <item value="Daily"/>
+                    <item value="Weekly"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="1f877" class="javax.swing.JTextField" binding="eventLocation">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="8bfae" class="javax.swing.JTextField" binding="eventEndTime">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="d94c4" class="javax.swing.JTextField" binding="eventStartTime">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="bb165" class="javax.swing.JTextField" binding="eventDate">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="83d1f" class="javax.swing.JTextField" binding="eventName">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="e44f0" class="javax.swing.JLabel" binding="addEventLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="b7cc2" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Remove Event"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="46389" class="javax.swing.JTextArea" binding="enterDateOfEventTextArea" default-binding="true">
+                <constraints>
+                  <grid row="0" column="2" row-span="3" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="5"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Enter Date of Event"/>
+                </properties>
+              </component>
+              <component id="24a76" class="javax.swing.JButton" binding="removeButton" default-binding="true">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Remove"/>
+                </properties>
+              </component>
+              <component id="54c9a" class="javax.swing.JLabel" binding="removeSpeaker">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="806c7" class="javax.swing.JTextField" binding="removeName8">
+                <constraints>
+                  <grid row="2" column="0" row-span="4" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="2c656" class="javax.swing.JTextArea" binding="enterNameOfEventTextArea" default-binding="true">
+                <constraints>
+                  <grid row="3" column="2" row-span="2" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="5"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Enter Name of Event"/>
+                </properties>
+              </component>
+              <component id="24b65" class="javax.swing.JTextField" binding="removeDate7">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <component id="3c8e2" class="javax.swing.JButton" binding="saveScheduleButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Save Schedule"/>
+        </properties>
+      </component>
+      <component id="3f950" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
